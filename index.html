@@ -1,146 +1,247 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 	<head>
 		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>ここにページタイトルを書く</title>
-		<!-- BootstrapのCSS読み込み -->
-		<link
-			rel="stylesheet"
-			rel="preload"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-			crossorigin="anonymous"
-			as="style"
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:title"
+			content="WebデザイナーTARO YAMADA ポートフォリオ"
 		/>
-		<style>
-			body {
-				padding-top: 70px;
-				font-family: "Noto Sans JP", sans-serif;
-			}
-		</style>
-
-		<!-- jQuery,Bootstrap読み込み -->
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-			crossorigin="anonymous"
-		></script>
+		<meta property="og:url" content="URLが入る" />
+		<meta
+			property="og:description"
+			content="TARO YAMADAのポートフォリオサイトです。"
+		/>
+		<meta property="og:image" content="img/ogp.png" />
+		<meta name="description" content="TARO YAMADAのポートフォリオサイトです" />
+		<title>TARO YAMADA ポートフォリオ</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"
+			rel="stylesheet"
+		/>
+		<link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="”canonical”" href="”URLが入る”" />
 	</head>
+
 	<body>
-		<!--ページ上部のバー-->
-		<div class="fixed-top">
-			<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-				<a href="https://username.github.io/" class="navbar-brand">
-					<img src="#" width="30" height="30" alt="my icon" />
-					ホームページ
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navmenu1"
-					aria-controls="navmenu1"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse justify-content-end" id="navmenu1">
-					<div class="navbar-nav">
-						<a class="nav-item nav-link" href="#">トピック1</a>
-						<a class="nav-item nav-link" href="#">トピック2</a>
-						<a class="nav-item nav-link" href="#">トピック3</a>
-					</div>
-					<!--自分のホームページ作るときは自分でロゴ画像用意してね-->
-					<a href="https://twitter.com/" target="_blank"
-						><img
-							src="https://matyalatte.github.io/images/logo/twitter.png"
-							witdh="24"
-							height="24"
-							alt="to my twitter"
-					/></a>
-					&nbsp;
-					<a href="https://github.com/" target="_blank"
-						><img
-							src="https://matyalatte.github.io/images/logo/git.png"
-							witdh="24"
-							height="24"
-							alt="to my github"
-					/></a>
+		<div class="wrapper">
+			<!-- header -->
+			<header class="header">
+				<div class="container">
+					<h1 class="header-logo">
+						<a href=".">TARO YAMADA</a>
+					</h1>
+					<nav class="gnav">
+						<ul class="gnav-list">
+							<li class="gnav-item"><a href="#works">WORKS</a></li>
+							<li class="gnav-item"><a href="#skill">SKILL</a></li>
+							<li class="gnav-item"><a href="#about">ABOUT</a></li>
+							<li class="gnav-item"><a href="#contact">CONTACT</a></li>
+						</ul>
+					</nav>
 				</div>
-			</nav>
-		</div>
+			</header>
+			<!-- /header -->
 
-		<a name="top"></a>
-		<main role="main" class="container">
-			<div class="row">
-				<div class="col-md-8 blog-main">
-					<div class="blog-post">
-						<h1 class="blog-post-title">タイトル</h1>
-						<p class="blog-post-meta">2020/xx/xx</p>
-						<p>なんか書く</p>
+			<main class="content">
+				<!-- mv -->
+				<div class="mv">
+					<div class="mv-container">
+						<p class="mv-title">TARO YAMADA</p>
+						<p class="mv-subtitle">PORTFOLIO</p>
+						<p class="mv-text">
+							ユーザーとお客様が心から満足できる<br
+								class="sp-only"
+							/>サイトをお作りいたします。<br />
+							デザインとコーディングは<br
+								class="sp-only"
+							/>おまかせください。<br />
+						</p>
 					</div>
-					<!-- /.blog-post -->
 				</div>
-				<!-- /.blog-main -->
+				<!-- /mv -->
 
-				<aside class="col-md-3 blog-sidebar">
-					<div class="p-3 mb-3 bg-light rounded">
-						<div style="text-align: center">
-							<img
-								src="https://matyalatte.github.io/images/icon.png"
-								width="100"
-								height="100"
-								alt="my icon"
-							/>
-							<h4>プロフィール</h4>
+				<!-- works -->
+				<section class="works section" id="works">
+					<div class="container">
+						<h2 class="title">WORKS</h2>
+						<div class="works-list">
+							<a class="works-item" href="works-template.html">
+								<div class="works-img">
+									<img src="img/works-sample-thumb.jpg" alt="" />
+								</div>
+								<p class="works-name">作品名が入る</p>
+								<p class="works-info">Design / Coding(Responsive)</p>
+							</a>
+							<a class="works-item" href="works-template.html">
+								<div class="works-img">
+									<img src="img/works-dummy-thumb.jpg" alt="" />
+								</div>
+								<p class="works-name">作品名が入る</p>
+								<p class="works-info">
+									Design / Coding(Responsive) / WordPress
+								</p>
+							</a>
+							<a class="works-item" href="works-template.html">
+								<div class="works-img">
+									<img src="img/works-dummy-thumb.jpg" alt="" />
+								</div>
+								<p class="works-name">作品名が入る</p>
+								<p class="works-info">Design</p>
+							</a>
+							<a class="works-item" href="works-template.html">
+								<div class="works-img">
+									<img src="img/works-dummy-thumb.jpg" alt="" />
+								</div>
+								<p class="works-name">作品名が入る</p>
+								<p class="works-info">Banner Design</p>
+							</a>
+							<a class="works-item" href="works-template.html">
+								<div class="works-img">
+									<img src="img/works-dummy-thumb.jpg" alt="" />
+								</div>
+								<p class="works-name">作品名が入る</p>
+								<p class="works-info">Banner Design</p>
+							</a>
 						</div>
-						<p class="mb-0">自己紹介を書く</p>
 					</div>
-				</aside>
-				<!-- /.blog-sidebar -->
-			</div>
-			<!-- /.row -->
-		</main>
-		<!-- /.container -->
+				</section>
+				<!-- /works -->
 
-		<footer class="page-footer bg-light border">
-			<div class="footer-copyright text-center py-3">
-				<a href="#top">一番上にもどる</a>
-				<p>© 2020 まちゃラテ</p>
-			</div>
+				<!-- skill -->
+				<section class="skill section" id="skill">
+					<div class="container">
+						<h2 class="title">SKILL</h2>
+						<div class="skill-list">
+							<div class="skill-item">
+								<p class="skill-img"><img src="img/icon_skill.png" alt="" /></p>
+								<div class="skill-body">
+									<h3 class="skill-name">HTML5/CSS3</h3>
+									<p class="skill-text">
+										テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+									</p>
+								</div>
+							</div>
+							<div class="skill-item">
+								<p class="skill-img"><img src="img/icon_skill.png" alt="" /></p>
+								<div class="skill-body">
+									<h3 class="skill-name">WordPress</h3>
+									<p class="skill-text">
+										テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+									</p>
+								</div>
+							</div>
+							<div class="skill-item">
+								<p class="skill-img"><img src="img/icon_skill.png" alt="" /></p>
+								<div class="skill-body">
+									<h3 class="skill-name">JavaScript</h3>
+									<p class="skill-text">
+										テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+									</p>
+								</div>
+							</div>
+							<div class="skill-item">
+								<p class="skill-img"><img src="img/icon_skill.png" alt="" /></p>
+								<div class="skill-body">
+									<h3 class="skill-name">Photoshop</h3>
+									<p class="skill-text">
+										テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+									</p>
+								</div>
+							</div>
+							<div class="skill-item">
+								<p class="skill-img"><img src="img/icon_skill.png" alt="" /></p>
+								<div class="skill-body">
+									<h3 class="skill-name">Illustrator</h3>
+									<p class="skill-text">
+										テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+									</p>
+								</div>
+							</div>
+							<div class="skill-item">
+								<p class="skill-img"><img src="img/icon_skill.png" alt="" /></p>
+								<div class="skill-body">
+									<h3 class="skill-name">XD</h3>
+									<p class="skill-text">
+										テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /skill -->
 
-			<!--フォント読み込み-->
-			<script>
-				window.WebFontConfig = {
-					google: { families: ["Noto+Sans+JP"] },
-					active: function () {
-						sessionStorage.fonts = true;
-					},
-				};
-				(function () {
-					var wf = document.createElement("script");
-					wf.src =
-						"https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js";
-					wf.type = "text/javascript";
-					wf.async = "true";
-					var s = document.getElementsByTagName("script")[0];
-					s.parentNode.insertBefore(wf, s);
-				})();
-			</script>
-		</footer>
+				<!-- about -->
+				<section class="about section" id="about">
+					<div class="container">
+						<h2 class="title">ABOUT</h2>
+						<div class="profile">
+							<p class="profile-img">
+								<img src="img/profile.jpg" alt="" />
+							</p>
+							<div class="profile-body">
+								<p>
+									テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+								</p>
+								<p>
+									テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /about -->
+
+				<!-- contact -->
+				<section class="contact section" id="contact">
+					<div class="container">
+						<h2 class="title">CONTACT</h2>
+						<p class="lead">
+							お問い合わせは、<br
+								class="sp-only"
+							/>SNSかメールにてお願いいたします。
+						</p>
+						<div class="contact-list">
+							<a
+								class="contact-item"
+								href="https://twitter.com/"
+								target="_blank"
+								rel="noopener"
+								>Twitter</a
+							>
+							<a
+								class="contact-item"
+								href="https://www.instagram.com/"
+								target="_blank"
+								rel="noopener"
+								>Instagram</a
+							>
+							<span class="contact-item">xxxxxx@gmail.com</span>
+						</div>
+					</div>
+				</section>
+				<!-- /contact -->
+				<div class="page-top" id="js-page-top">
+					<span class="material-icons-outlined">expand_less</span>
+				</div>
+			</main>
+
+			<!-- footer -->
+			<footer class="footer">
+				<div class="copyright">&copy;TARO YAMADA</div>
+			</footer>
+			<!-- /footer -->
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
